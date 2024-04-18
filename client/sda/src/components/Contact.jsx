@@ -107,7 +107,7 @@ function Contact() {
     formData.append("how", howDidYouHear);
 
     axios
-      .post("http://josephrep-jvhms.vercel.app/upload", formData, {
+      .post("https://josephrep-jvhms.vercel.app/upload", formData, {
         headers: {
           "Content-Type": "multipart/form-data",
         },
