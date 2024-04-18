@@ -7,8 +7,11 @@ const multer = require("multer");
 const app = express();
 const PORT = 3001;
 
+// Middleware
 app.use(cors());
 app.use(express.json({ limit: "25mb" }));
+
+// CORS middleware
 app.use(function (req, res, next) {
   //Enabling CORS
   res.header("Access-Control-Allow-Origin", "*");
