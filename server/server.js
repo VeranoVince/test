@@ -1,6 +1,4 @@
 const express = require("express");
-const mysql = require("mysql2");
-const cors = require("cors");
 const nodemailer = require("nodemailer");
 const multer = require("multer");
 
@@ -8,7 +6,6 @@ const app = express();
 const PORT = 3001;
 
 // Middleware
-app.use(cors());
 app.use(express.json({ limit: "25mb" }));
 
 // CORS middleware
