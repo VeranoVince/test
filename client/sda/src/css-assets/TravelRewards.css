@@ -1,0 +1,137 @@
+/* TravelRewards.css */
+
+/* Base styles */
+
+.travel-rewards-container {
+  background-image: url("/Images/Travel.png");
+  background-size: cover; /* Cover the entire width and height of the container */
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  min-height: 75vh; /* Use minimum height of viewport height for better responsiveness */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 20px; /* Add some padding for better spacing */
+}
+
+.boxes {
+  display: flex;
+  flex-wrap: wrap; /* Allow boxes to wrap to the next line on smaller screens */
+  justify-content: center;
+  gap: 20px; /* Adjust the space between boxes */
+  margin-bottom: 3%;
+}
+
+.box {
+  flex: 1 1 300px; /* Allow boxes to grow and shrink as needed, with a minimum width of 300px */
+  max-width: 350px; /* Limit the maximum width of the boxes */
+  height: 200px; /* Fixed height for the box */
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.box:hover {
+  transform: scale(1.05); /* Scale up slightly on hover */
+}
+
+.box h3 {
+  margin: 0;
+  color: #2474b4;
+}
+
+.box-text {
+  margin: 5px 0;
+  text-align: center;
+  font-size: small;
+  font-weight: 700;
+  color: #2474b4;
+}
+
+.icon {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+h1.travelheader {
+  font-size: 60px; /* Adjust font size for smaller screens */
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.2;
+  font-family: Calibri, sans-serif;
+  font-weight: lighter;
+}
+
+.travelsub {
+  font-size: 55px; /* Adjust font size for smaller screens */
+  margin-bottom: 7%;
+  font-weight: bolder;
+  text-align: center;
+  color: #ffffff;
+  font-family: "Arial", sans-serif;
+  letter-spacing: 1px;
+}
+
+/* Media queries for responsiveness */
+
+@media only screen and (max-width: 768px) {
+  .box {
+    width: calc(50% - 20px); /* Adjust box width to fit two boxes per row */
+  }
+
+  h1.travelheader {
+    font-size: 40px; /* Adjust font size for smaller screens */
+  }
+
+  .travelsub {
+    font-size: 35px; /* Adjust font size for smaller screens */
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .box {
+    width: calc(70% - 20px); /* Adjust box width to fit two boxes per row */
+    height: calc(70% - 20px);
+  }
+
+  h1.travelheader {
+    font-size: 30px; /* Adjust font size for smaller screens */
+  }
+
+  .travelsub {
+    font-size: 25px; /* Adjust font size for smaller screens */
+  }
+  .box h3 {
+    font-size: 20px;
+    margin: 0;
+  }
+
+  .box-text {
+    font-size: small;
+  }
+
+  .icon {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .box {
+    width: calc(30% - 20px);
+    height: calc(30% - 20px);
+  }
+
+  h1.travelheader {
+    font-size: 30px;
+  }
+
+  .travelsub {
+    font-size: 25px;
+  }
+}

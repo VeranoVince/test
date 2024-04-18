@@ -1,0 +1,29 @@
+/* NewsBanner.css */
+.Nbanner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8%;
+  margin: 0;
+  box-sizing: border-box;
+  background-image: url("/Images/bg1.png");
+  background-repeat: no-repeat; /* Prevent the background image from repeating */
+  background-size: cover; /* Adjust the background size to cover the container */
+  height: 100px;
+}
+
+.bannertext {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  flex: 1;
+  font-size: 150px;
+  text-align: left;
+
+  font-weight: bolder;
+  color: #2474b4;
+}
+
+.bannerjoin {
+  line-height: 0%;
+  color: rgb(255, 255, 255);
+  font-size: large;
+}

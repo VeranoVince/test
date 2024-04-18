@@ -1,0 +1,155 @@
+.rect-container {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 5px;
+}
+
+.rect-image img {
+  border-top: #2474b4;
+  margin-top: 400px;
+  max-width: 100%;
+  max-height: 100%;
+  margin-left: 30%;
+  --color: #3e0f9b; /* the border color */
+  --border: 10px; /* the border thickness */
+  --offset: 20px; /* control the offset */
+  --gap: 5px; /* the gap on hover */
+
+  --_c: var(--color) var(--border), #0000 0 calc(100% - var(--border)),
+    var(--color) 0;
+  --_o: calc(3 * var(--offset));
+  padding: calc(var(--gap) + var(--border))
+    calc(var(--gap) + var(--border) + var(--offset))
+    calc(var(--gap) + var(--border) + var(--offset))
+    calc(var(--gap) + var(--border));
+  background: linear-gradient(var(--_c)) var(--_o) var(--_o),
+    linear-gradient(90deg, var(--_c)) var(--_o) var(--_o);
+  background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
+  background-repeat: no-repeat;
+  filter: grayscale(0.4);
+  transition: 0.5s;
+  cursor: pointer;
+}
+
+.rect-image img:hover {
+  background-position: 0px 0px;
+  background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
+  filter: grayscale(0);
+}
+
+.rect-text {
+  white-space: pre;
+}
+
+.Largest {
+  color: #2474b4;
+  margin-top: 45%;
+  font-size: 80px;
+  margin-left: 40%;
+  font-family: fantasy;
+}
+
+.highlight-text {
+  color: white;
+  background-color: #2474b4;
+  padding: 5px; /* Optional: Add padding for better visual appearance */
+  border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+@media (max-width: 1024px) {
+  .rect-container {
+    grid-template-columns: 1fr 1fr; /* Two columns layout */
+  }
+
+  .rect-image img {
+    margin-left: 0; /* Center the image */
+    margin-top: 300px;
+  }
+
+  .Largest {
+    font-size: 40px; /* Reduce font size for smaller screens */
+    margin-left: 0; /* Center the text */
+    text-align: left; /* Center the text */
+  }
+}
+
+@media (max-width: 820px) and (max-height: 1180) {
+  .rect-container {
+    grid-template-columns: 1fr 1fr; /* Two columns layout */
+  }
+
+  .rect-image img {
+    margin-left: 0; /* Center the image */
+    margin-top: 200px;
+  }
+
+  .Largest {
+    font-size: 40px; /* Reduce font size for smaller screens */
+    margin-left: 0; /* Center the text */
+    text-align: left; /* Center the text */
+  }
+}
+
+@media (max-width: 768px) {
+  .rect-container {
+    grid-template-columns: 1fr; /* Single column layout */
+  }
+
+  .rect-image img {
+    margin-top: 300px; /* Adjust margin for smaller screens */
+    max-width: 45%;
+    max-height: 45%;
+    margin-left: 30%;
+  }
+
+  .Largest {
+    margin-top: 5%;
+    font-size: 40px; /* Further reduce font size for smaller screens */
+    text-align: center;
+    margin-left: 10%;
+  }
+}
+
+@media (max-width: 480px) and (max-height: 653px) {
+  .rect-image img {
+    margin-top: 400px; /* Adjust margin for smaller screens */
+    max-width: 75%;
+    max-height: 75%;
+    margin-left: 15%;
+  }
+}
+
+@media (max-width: 480px) {
+  .rect-image img {
+    margin-top: 400px; /* Adjust margin for smaller screens */
+    max-width: 75%;
+    max-height: 75%;
+    margin-left: 15%;
+  }
+}
+
+@media (max-width: 430px) {
+  .rect-image img {
+    margin-top: 250px; /* Adjust margin for Galaxy Fold */
+  }
+  .Largest {
+    font-size: 30px; /* Adjust font size for Galaxy Fold */
+    margin-top: 15%; /* Adjust margin for Galaxy Fold */
+    margin-left: 10%; /* Adjust margin for Galaxy Fold */
+    text-align: center; /* Center the text */
+  }
+}
+
+@media (max-width: 280px) and (max-height: 653px) {
+  .rect-image img {
+    margin-top: 350px; /* Adjust margin for Galaxy Fold */
+  }
+
+  .Largest {
+    font-size: 20px; /* Adjust font size for Galaxy Fold */
+    margin-top: 30%; /* Adjust margin for Galaxy Fold */
+    margin-left: 5%; /* Adjust margin for Galaxy Fold */
+    text-align: center; /* Center the text */
+  }
+}

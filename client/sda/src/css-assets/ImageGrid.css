@@ -1,0 +1,119 @@
+/* ImageGrid.css */
+
+/* Base styles */
+.NewsMedia {
+  text-align: left;
+  font-size: 80px;
+  margin-right: 40%;
+}
+
+.ClickableImage {
+  transition: transform 0.3s ease-in-out;
+  margin: 1%;
+  max-width: 100%;
+  height: auto;
+}
+
+.FirstImage {
+  /* Set a default size for the first image */
+  width: 500px;
+  height: 400px;
+  margin-left: 5%;
+}
+
+.ClickableImage:hover {
+  transform: scale(1.05);
+}
+
+.ReadMore {
+  text-align: left;
+  background-color: #ffffff;
+  color: #000000;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.ReadMore:hover {
+  background-color: #ff0000;
+}
+
+.ReadMore a {
+  color: #080808;
+  text-decoration: none;
+}
+
+.ReadMore a:hover {
+  color: #ffffff;
+}
+
+.news-media-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Align items to the center */
+}
+
+.image-row {
+  margin-left: -20%;
+  margin-right: -20%;
+}
+
+.image-row > .col {
+  padding: 0;
+}
+
+@media only screen and (max-width: 1400px) {
+  .NewsMedia {
+    font-size: 60px;
+  }
+
+  .FirstImage {
+    width: 100%; /* Set the width of the first image to 100% on smaller screens */
+    max-height: 300px; /* Reduce max-height for smaller screens */
+  }
+
+  .ClickableImage {
+    max-width: 100%;
+    height: auto;
+  }
+  .image-row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+}
+
+@media only screen and (max-width: 660px) {
+  .NewsMedia {
+    font-size: 50px;
+    margin-left: 10%;
+  }
+
+  .FirstImage {
+    width: 100%; /* Set the width of the first image to 100% on smaller screens */
+    max-height: 250px; /* Adjust max-height for smaller screens */
+  }
+
+  .ClickableImage {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .NewsMedia {
+    font-size: 40px;
+    margin-left: 5%;
+  }
+
+  .FirstImage {
+    width: 100%; /* Set the width of the first image to 100% on smaller screens */
+    max-height: 200px; /* Further adjust max-height for smaller screens */
+  }
+
+  .ClickableImage {
+    max-width: 100%;
+    height: auto;
+  }
+}

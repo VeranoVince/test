@@ -1,0 +1,146 @@
+.custom-card {
+  width: 100%;
+  margin-top: 20%;
+  max-height: 100%; /* Adjust the height as needed */
+  cursor: pointer;
+  position: relative; /* Ensure the positioning context for pseudo-elements */
+  padding: 10px 5px; /* Add padding to create space between the content and the border */
+  display: block; /* Ensure the image behaves as a block element */
+}
+
+.custom-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add a box shadow */
+  transition: box-shadow 0.3s ease; /* Add a smooth transition effect */
+}
+
+.custom-card:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px; /* Adjust the underline height as needed */
+  bottom: 0;
+  left: 0;
+  background-color: #007bff; /* Change the underline color as needed */
+}
+
+.custom-card-title {
+  max-height: 2.5em; /* Adjust as needed */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.custom-card-img {
+  width: 100px; /* Adjust as needed */
+  height: 100px; /* Adjust as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center vertically */
+  align-items: center; /* Center horizontally */
+  object-fit: cover; /* Ensure the entire image is visible, covering the circle */
+  display: block; /* Ensure the image behaves as a block element */
+  margin: 0 auto; /* Center the image horizontally */
+  border-radius: 50%; /* Make it a circle */
+}
+
+/* Custom styles for the Modal*/
+.remove-header {
+  border-bottom: none;
+}
+
+.fullscreen-btn {
+  color: rgb(109, 108, 108); /* Change to the desired color */
+  position: absolute;
+  left: 88%; /* Adjust as needed */
+  cursor: pointer;
+}
+
+.fullscreen-btn:hover {
+  cursor: pointer;
+  color: rgb(0, 0, 0); /* Change to the desired color */
+}
+
+.custom-carousel {
+  width: 100%; /* Ensures the carousel takes up the full width of its container */
+  height: auto; /* Allows the height to adjust dynamically based on image proportions */
+}
+
+.custom-carousel .carousel-control-prev,
+.custom-carousel .carousel-control-next {
+  background-color: transparent; /* Set initial background color to transparent */
+  transition: background-color 0.3s ease; /* Add transition effect for smooth color change */
+}
+
+.custom-carousel .carousel-control-prev:hover,
+.custom-carousel .carousel-control-next:hover {
+  background-color: #f0e2e24f; /* Change background color on hover */
+}
+
+.custom-carousel .carousel-control-prev-icon,
+.custom-carousel .carousel-control-next-icon {
+  filter: invert(100%);
+}
+
+.modal-margin {
+  margin-top: 2%;
+}
+
+.p-margin {
+  text-align: center; /* Align all content to the center */
+  margin-top: 2%;
+  margin-left: auto; /* Center the left margin */
+  margin-right: auto; /* Center the right margin */
+  width: 80%; /* Adjust the width as needed */
+  text-indent: 0; /* Remove text indentation */
+}
+
+.img-size {
+  display: block;
+  margin: 0 auto;
+  max-width: 50%;
+  max-height: 100%;
+}
+
+/* Custom styles for the Nav.Link */
+.nav-custom {
+  display: inline-flex;
+  justify-content: center;
+  margin-left: 20%;
+}
+
+.navlink-content {
+  font-size: 24px;
+  color: #ffffff;
+  background-color: #249ffd;
+  align-items: center; /* Center horizontally */
+  text-align: center; /* Center the text */
+  position: relative; /* Required for positioning the arrow */
+  padding: 10px 10px 10px 10px; /* Adjust the padding as needed */
+  width: 200px; /* Set a specific width for the buttons */
+  margin-right: 50px; /* Add margin between the buttons */
+  margin-bottom: 5px;
+}
+
+.navlink-content:hover {
+  background-color: #249ffd;
+}
+
+.nav-container {
+  margin-top: 2%;
+  margin-bottom: 2%;
+  border: 2px solid #ccc; /* Add border with desired color */
+  border-radius: 10px; /* Add border radius for rounded corners */
+  padding: 20px; /* Add padding to create space between the content and the border */
+  background-color: #e7f3fa;
+}
+
+.news-page-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.video-container {
+  text-align: center;
+}

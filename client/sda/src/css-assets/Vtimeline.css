@@ -1,0 +1,32 @@
+.scroll-top-button-history {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  font-weight: bold;
+  background: #31a0f7; /* Change to your preferred background color */
+  color: #fff; /* Change to your preferred text color */
+  padding: 15px;
+  border-radius: 50%;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+}
+
+.viti .vertical-timeline-element--education .vertical-timeline-element-date {
+  font-size: 300%; /* Adjust the font size as needed */
+}
+
+@media only screen and (max-width: 768px) {
+  .viti {
+    padding: 0 10px; /* Add horizontal padding for better spacing */
+  }
+
+  .vertical-timeline-element-content {
+    font-size: 14px; /* Decrease font size for better readability on smaller screens */
+  }
+
+  .full-image {
+    width: 100%; /* Make images full width */
+    height: auto; /* Maintain aspect ratio */
+  }
+}

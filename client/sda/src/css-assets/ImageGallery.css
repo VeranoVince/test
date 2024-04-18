@@ -1,0 +1,174 @@
+.vally {
+  text-align: center;
+  margin-bottom: 20px;
+  font-style: italic;
+}
+
+.partners {
+  color: #2273b2;
+  font-size: 34px;
+  margin-top: 13%;
+}
+
+.alliances {
+  color: #2273b2;
+  font-size: 54px;
+  font-weight: bold;
+}
+
+.image-gallery-container {
+  background: linear-gradient(to right, #a8c8ec, #e3f2fa);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 10%;
+}
+
+.image-wrapper {
+  margin-top: 40%;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+.gallery-image {
+  width: 90%;
+  max-width: 100px;
+  height: auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery-image:hover {
+  transform: scale(1.1);
+  text-shadow: 2px 2px 4px #6699cc;
+}
+
+@media (min-width: 1301px) {
+  .partners {
+    font-size: 70px;
+  }
+
+  .alliances {
+    font-size: 70px;
+  }
+}
+@media (max-width: 1300px) {
+  .partners {
+    font-size: 80px;
+  }
+
+  .alliances {
+    font-size: 80px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .partners {
+    font-size: 30px;
+  }
+
+  .alliances {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .partners {
+    font-size: 70px;
+  }
+
+  .alliances {
+    font-size: 70px;
+  }
+  .gallery-image {
+    width: 110%;
+    max-width: 500px;
+  }
+}
+@media (max-width: 1024px) and (min-height: 1366px) {
+  .partners {
+    font-size: 70px;
+  }
+
+  .alliances {
+    font-size: 70px;
+  }
+  .gallery-image {
+    width: 110%;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 992px) {
+  .partners {
+    font-size: 65px;
+  }
+
+  .alliances {
+    font-size: 65px;
+  }
+  .gallery-image {
+    width: 110%;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 768px) {
+  .partners {
+    font-size: 55px;
+  }
+
+  .alliances {
+    font-size: 55px;
+  }
+  .gallery-image {
+    width: 110%;
+    max-width: 500px;
+  }
+}
+
+@media (max-width: 767px) {
+  .partners {
+    font-size: 35px;
+  }
+
+  .alliances {
+    font-size: 34px;
+  }
+  .gallery-image {
+    width: 50%;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 375px) {
+  .partners {
+    font-size: 30px;
+  }
+
+  .alliances {
+    font-size: 30px;
+  }
+  .gallery-image {
+    width: 50%;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 360px) {
+  .partners {
+    font-size: 30px;
+  }
+
+  .alliances {
+    font-size: 30px;
+  }
+  .gallery-image {
+    width: 50%;
+    max-width: 200px;
+  }
+}

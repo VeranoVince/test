@@ -1,0 +1,16 @@
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: left;
+}
+
+.sms-container {
+  text-align: left;
+}
+
+.contact-h1 {
+  margin-top: 15px;
+  font-size: 3rem; /* Adjust the font size as needed */
+}

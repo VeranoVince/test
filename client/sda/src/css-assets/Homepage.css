@@ -1,0 +1,254 @@
+@import-normalize;
+
+body {
+  background-image: linear-gradient(to right, #a8c8ec, #e3f2fa) !important;
+}
+.investment-benefits {
+  padding-top: 1%;
+  text-align: center;
+  background-color: #f41d77;
+  border-top: 2px solid #5745f8;
+  border-bottom: 2px solid #ffffff;
+}
+
+.investment-benefits h1 {
+  font-size: 32px;
+  color: #ffffff;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.investment-benefits h1 span {
+  color: rgb(255, 191, 1);
+  text-decoration: underline;
+}
+
+.investment-benefits-title {
+  font-size: 36px;
+  color: #1c77ba;
+  text-align: center;
+  margin-top: 8%;
+  margin-bottom: 10px;
+  font-style: italic;
+  letter-spacing: 7px;
+}
+h1.takea {
+  font-size: 65px;
+  color: #1c77ba;
+  text-align: center;
+  margin-top: 500px;
+  margin-bottom: 20px;
+  line-height: 0.1;
+  font-family: Calibri, sans-serif; /* Add Arial to the font-family */
+  font-weight: lighter; /* Set the desired font weight */
+}
+
+.sub-text {
+  font-size: 60px;
+  margin-bottom: 5%;
+  font-weight: bolder;
+  text-align: center;
+  color: #1c77ba;
+  font-family: "Arial", sans-serif; /* Add Arial Black to the font-family */
+  margin-left: auto;
+  margin-right: auto;
+  letter-spacing: 1px;
+}
+
+.header-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  z-index: 1;
+  position: relative;
+  top: 0px;
+}
+
+.stats-container {
+  position: absolute;
+  top: 80%;
+  left: 0;
+  width: 100%;
+  z-index: 2;
+  margin-top: 3%;
+}
+
+@media (min-width: 1301px) {
+  .stats-container {
+    top: 75%; /* Adjust the top position for smaller screens */
+  }
+  h1.takea {
+    font-size: 50px; /* Decrease font size for smaller screens */
+    margin-top: 500px; /* Adjust margin-top for smaller screens */
+  }
+  .sub-text {
+    font-size: 65px; /* Decrease font size for smaller screens */
+  }
+}
+@media (max-width: 1300px) {
+  .stats-container {
+    top: 60%; /* Adjust the top position for smaller screens */
+  }
+  h1.takea {
+    font-size: 50px; /* Decrease font size for smaller screens */
+    margin-top: 400px; /* Adjust margin-top for smaller screens */
+  }
+  .sub-text {
+    font-size: 65px; /* Decrease font size for smaller screens */
+  }
+}
+
+@media (max-width: 1200px) {
+  .stats-container {
+    top: 60%; /* Adjust the top position for smaller screens */
+  }
+  h1.takea {
+    font-size: 50px; /* Decrease font size for smaller screens */
+    margin-top: 400px; /* Adjust margin-top for smaller screens */
+  }
+  .sub-text {
+    font-size: 65px; /* Decrease font size for smaller screens */
+  }
+}
+
+@media (max-width: 1024px) {
+  .stats-container {
+    top: 60%; /* Adjust the top position for smaller screens */
+  }
+  h1.takea {
+    font-size: 45px; /* Decrease font size for smaller screens */
+    margin-top: 330px; /* Adjust margin-top for smaller screens */
+  }
+
+  .sub-text {
+    font-size: 60px; /* Decrease font size for smaller screens */
+  }
+}
+@media (max-width: 1024px) and (min-height: 1366px) {
+  .stats-container {
+    top: 27%; /* Adjust the top position for smaller screens */
+  }
+  h1.takea {
+    font-size: 45px; /* Decrease font size for smaller screens */
+    margin-top: 330px; /* Adjust margin-top for smaller screens */
+  }
+
+  .sub-text {
+    font-size: 60px; /* Decrease font size for smaller screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .stats-container {
+    top: 26%; /* Adjust the top position for smaller screens */
+  }
+  h1.takea {
+    font-size: 35px; /* Decrease font size for smaller screens */
+    margin-top: 340px; /* Adjust margin-top for smaller screens */
+  }
+
+  .sub-text {
+    font-size: 47px; /* Decrease font size for smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .stats-container {
+    top: 29%; /* Adjust the top position for smaller screens */
+  }
+  h1.takea {
+    font-size: 35px; /* Decrease font size for smaller screens */
+    margin-top: 270px; /* Adjust margin-top for smaller screens */
+  }
+
+  .sub-text {
+    font-size: 45px; /* Decrease font size for smaller screens */
+  }
+}
+
+@media (max-width: 767px) {
+  .stats-container {
+    top: 22%; /* Adjust the top position for smaller screens */
+  }
+  h1.takea {
+    font-size: 20px; /* Decrease font size for smaller screens */
+    margin-top: 240px; /* Adjust margin-top for smaller screens */
+  }
+
+  .sub-text {
+    font-size: 23px; /* Decrease font size for smaller screens */
+  }
+  .investment-benefits-title {
+    font-size: 23px;
+  }
+}
+@media (max-width: 540px) and (max-height: 720px) {
+  .stats-container {
+    top: 31%; /* Adjust the top position for smaller screens */
+  }
+  h1.takea {
+    font-size: 25px; /* Decrease font size for smaller screens */
+    margin-top: 220px; /* Adjust margin-top for smaller screens */
+  }
+
+  .sub-text {
+    font-size: 30px; /* Decrease font size for smaller screens */
+    letter-spacing: 2.5px;
+  }
+  .investment-benefits-title {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 375px) {
+  .stats-container {
+    top: 27%; /* Adjust the top position for smaller screens */
+  }
+  h1.takea {
+    font-size: 16px; /* Decrease font size for smaller screens */
+    margin-top: 220px; /* Adjust margin-top for smaller screens */
+  }
+
+  .sub-text {
+    font-size: 17.5px; /* Decrease font size for smaller screens */
+    letter-spacing: 2.5px;
+  }
+  .investment-benefits-title {
+    font-size: 19px;
+  }
+}
+
+@media (max-width: 360px) {
+  .stats-container {
+    top: 24%; /* Adjust the top position for smaller screens */
+  }
+  h1.takea {
+    font-size: 15px; /* Decrease font size for smaller screens */
+    margin-top: 235px; /* Adjust margin-top for smaller screens */
+  }
+
+  .sub-text {
+    font-size: 17.5px; /* Decrease font size for smaller screens */
+    letter-spacing: 1px;
+  }
+  .investment-benefits-title {
+    font-size: 19px;
+  }
+}
+@media (max-width: 280px) {
+  .stats-container {
+    top: 23%; /* Adjust the top position for smaller screens */
+  }
+  h1.takea {
+    font-size: 14px; /* Decrease font size for smaller screens */
+    margin-top: 200px; /* Adjust margin-top for smaller screens */
+  }
+
+  .sub-text {
+    font-size: 15px; /* Decrease font size for smaller screens */
+    letter-spacing: 1px;
+  }
+  .investment-benefits-title {
+    font-size: 19px;
+  }
+}

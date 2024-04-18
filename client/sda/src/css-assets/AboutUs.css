@@ -1,0 +1,224 @@
+.aboutp {
+  text-align: left;
+  margin-left: 0%;
+  margin-bottom: 20px;
+  color: rgb(3, 234, 255);
+}
+
+.ally {
+  margin-bottom: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(41, 41, 41);
+  font-weight: bold;
+  text-align: left;
+  margin-left: 8%;
+}
+.hally {
+  margin-bottom: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(41, 41, 41);
+  font-weight: bold;
+  text-align: center;
+}
+
+.two-columns {
+  display: flex;
+  padding-left: 8%;
+  padding-right: 8%;
+  justify-content: space-between;
+}
+
+.first-paragraph,
+.second-paragraph {
+  width: 48%;
+  text-align: left;
+  text-align: justify;
+  font-size: 28px;
+}
+
+.about-us-container {
+  text-align: center;
+  margin: 20px;
+}
+
+.about-us-image-container {
+  margin-bottom: 20px;
+  margin-top: -2%;
+}
+
+.about-us-image {
+  border-radius: 8px;
+}
+.about-us-image:hover {
+  transform: scale(1.1); /* Adjust the scale value as needed */
+  transition: transform 0.3s ease; /* Adjust the transition duration as needed */
+}
+
+p {
+  line-height: 1.5;
+  color: #333;
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+.philam-life-info {
+  text-align: left;
+  margin-top: 30px;
+  margin-left: 8%;
+  margin-right: 8%;
+  text-align: justify;
+  font-size: 20px;
+}
+
+.philam-life-info h2 {
+  color: #333333;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.philam-life-info h3 {
+  color: #cc0000;
+  font-size: 1.8em;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.philam-life-info ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.philam-life-info li {
+  margin-bottom: 10px;
+}
+
+.philam-life-info a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.philam-life-info a:hover {
+  text-decoration: underline;
+}
+
+.aboutm {
+  text-align: center;
+}
+
+.hey-image-container {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.hey-image {
+  width: 50%;
+  opacity: 0;
+  animation: fade-in 1.5s forwards;
+}
+
+.philam-life-card {
+  font-size: smaller;
+  background-color: #f0f7fb;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px #57b2f856;
+}
+.full-image-container {
+  height: 50vh; /* Set an initial height for the container */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+  transition: height 0.3s ease; /* Add a smooth transition effect */
+}
+
+.full-image {
+  max-width: 100%;
+  max-height: 100%;
+  width: auto;
+  height: auto;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@media only screen and (max-width: 1600px) {
+  .philam-life-info h2 {
+    font-size: auto;
+  }
+  .about-us-container {
+    padding: 0 20px;
+  }
+
+  .two-columns {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .first-paragraph,
+  .second-paragraph {
+    width: 100%;
+    text-align: justify;
+    font-size: 22px;
+    margin-bottom: 20px;
+    font-weight: 450;
+  }
+
+  .about-us-image,
+  .aboutmakati,
+  .full-image {
+    width: 100%;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .philam-life-info h3 {
+    font-size: 1em;
+  }
+  .aboutm {
+    font-size: 10px;
+    font-weight: 200;
+  }
+  .philam-life-info h2 {
+    font-size: 20px;
+  }
+  .about-us-container {
+    padding: 0 10px;
+  }
+
+  .first-paragraph,
+  .second-paragraph {
+    font-size: 14px;
+    font-weight: 300;
+  }
+  .aboutphil {
+    font-size: 14px;
+    font-weight: 200;
+  }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 992px) {
+  .about-us-container {
+    padding: 0 30px;
+  }
+
+  .first-paragraph,
+  .second-paragraph {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  .about-us-container {
+    padding: 0 50px;
+  }
+}

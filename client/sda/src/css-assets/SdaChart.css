@@ -1,0 +1,93 @@
+.custom-nav-link {
+  color: #404040 !important; /* Change the color to red */
+  font-size: 20px;
+}
+
+.custom-nav {
+  width: 90%; /* Adjust the width as needed */
+  margin: 0 auto; /* Center the tabs horizontally */
+}
+
+.team-tab-container {
+  text-align: center; /* Center the content */
+}
+.founder-image {
+  display: block; /* Ensure the image is displayed as a block element */
+  margin: 0 auto; /* Center the image horizontally */
+  max-width: 30%; /* Ensure the image does not exceed its container width */
+  max-height: auto;
+  box-shadow: 0 4px 8px #00000069;
+}
+
+.founder-content {
+  text-align: center;
+  font-size: bold;
+}
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin-bottom: 20px;
+}
+
+.profile-picture {
+  margin-right: 10px;
+}
+
+.profile-image {
+  width: 171px;
+  margin-left: 10px;
+  height: 180px;
+  margin-top: 55%;
+  box-shadow: 0 4px 8px #00000069;
+}
+
+.profile-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Allow content to take up remaining space */
+}
+
+.profile-title {
+  font-size: 28px; /* Adjust the font size as needed */
+  color: black;
+  margin-right: 450px;
+  margin-top: 10%;
+  text-align: left;
+  margin-left: 16%;
+}
+
+.profile-description {
+  font-size: 18px; /* Adjust the font size as needed */
+  color: black;
+  margin-right: 630px;
+}
+
+.custom-accordion {
+  max-width: 88%; /* Adjust the maximum width as needed */
+  box-shadow: none !important;
+  left: 100px;
+}
+
+.custom-accordion .MuiAccordionSummary-content {
+  width: calc(100% - 40px); /* Adjust the width of the summary content */
+  /* 40px is the default width of the expand icon */
+}
+
+.custom-accordion-details {
+  display: flex;
+  justify-content: center;
+}
+
+.employee-header-container {
+  background-color: #e4e3c0;
+  text-align: right;
+}
+
+.employee-container {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+}

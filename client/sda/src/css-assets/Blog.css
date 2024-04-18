@@ -1,0 +1,73 @@
+.react-multiple-carousel__arrow {
+  z-index: 0;
+}
+.react-multi-carousel-dot-list {
+  bottom: auto;
+}
+.react-multi-carousel-list {
+  height: 400px; /* Set the desired height for the carousel */
+}
+.arrow-icon:hover {
+  color: red; /* Change color on hover */
+}
+.card-body {
+  position: relative;
+}
+.card:hover {
+  transform: scale(1.05); /* Zoom in effect on hover */
+}
+.carousel-item-wrapper {
+  width: 15rem;
+  margin: 0 auto;
+  height: 20rem;
+  overflow: hidden; /* Ensure that overflow content is hidden */
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.carousel-item-wrapper:hover {
+  transform: scale(1.1); /* Zoom in effect */
+  transition: transform 0.3s ease; /* Add smooth transition */
+  border: 1px solid #ccc; /* Add a 1px solid border with a gray color */
+  border-radius: 5px; /* Optional: Add border radius for rounded corners */
+}
+
+.carousel-item-wrapper:hover .card {
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+}
+.card:hover .arrow-icon {
+  display: block; /* Show the arrow icon when the card is hovered */
+  animation: arrowSlideIn 0.3s forwards;
+}
+
+.arrow-icon {
+  display: none;
+}
+@keyframes arrowSlideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes arrowSlideOut {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+.fade-in {
+  animation: fadeIn 3s ease forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

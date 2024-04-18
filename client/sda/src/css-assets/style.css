@@ -1,0 +1,112 @@
+.bg-orange-custom {
+  background: #3c8dcb !important;
+  z-index: 3;
+  max-width: 100%;
+  height: auto;
+}
+
+.cardtext {
+  font-size: 24px;
+  text-align: center;
+  background-color: #d9d9d9;
+}
+
+.signin-btn {
+  background-color: #d4244a;
+}
+
+.signin-btn:hover {
+  background-color: #d4244a;
+  border-color: #ffffff;
+  font-weight: bold;
+}
+
+.bold-text-container {
+  font-weight: bold;
+}
+
+.white-text {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  transition: background-color 0.3s, color 0.3s; /* Add transition for smooth effect */
+  text-decoration: none; /* Remove default underline */
+  font-weight: bold;
+}
+
+#basic-nav-dropdown {
+  color: white;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 20px;
+  transition: background-color 0.3s, color 0.3s; /* Add transition for smooth effect */
+  text-decoration: none; /* Remove default underline */
+  font-weight: bold;
+}
+
+#basic-nav-dropdown:hover,
+#basic-nav-dropdown:active,
+#basic-nav-dropdown:focus,
+#basic-nav-dropdown:visited,
+.white-text:hover,
+.white-text:active,
+.white-text:focus,
+.white-text:visited {
+  font-weight: 650;
+  color: rgb(255, 255, 255);
+  text-decoration: underline; /* Ensure underline for active, focus, hover, and visited states */
+  text-decoration-thickness: 2px; /* Adjust the thickness as needed */
+  text-underline-offset: 4px; /* Adjust the offset as needed */
+}
+
+.droptext {
+  font-weight: bold;
+}
+
+.custom-dropdown .dropdown-menu {
+  background-color: rgba(
+    255,
+    255,
+    255,
+    0.428
+  ); /* Semi-transparent white background color */
+  backdrop-filter: blur(10px); /* Apply blur effect */
+}
+
+.custom-dropdown .dropdown-item:hover {
+  background-color: #2273b2; /* Change background color of the dropdown item on hover */
+  color: rgb(255, 255, 255);
+}
+
+.ClickableImageCol:hover img {
+  filter: brightness(80%); /* Highlight the image to blue on hover */
+}
+
+.navbar-expand-lg .navbar-nav .nav-link.white-text:hover {
+  color: rgb(255, 255, 255) !important;
+  font-size: 21px;
+}
+
+.navBar {
+  background-color: #ffffff; /* Change the background color as needed */
+  /*margin-bottom: -20px;*/
+}
+
+.modalContainer {
+  border: 2px solid #ffbe0b; /* Set your desired border color */
+  border-radius: 10px; /* Set border radius for rounded corners */
+  padding: 20px; /* Add padding for content inside the modal */
+}
+
+#navbarScrollingDropdown {
+  color: #ffffff;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#navbarScrollingDropdown:hover {
+  font-weight: 650;
+  color: white !important;
+}
+
+.nav-link {
+  padding-left: 5%;
+}

@@ -1,0 +1,214 @@
+/* StatsGroup.css */
+
+.root {
+  color: rgb(255, 255, 255);
+  margin-right: 5%;
+  margin-left: 5%;
+  margin-top: 8%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(-60deg, #2273b2 63%, #249ffd 37%);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+
+.stat {
+  flex-basis: 33%;
+  padding: 10px;
+  text-align: center;
+}
+
+.icon-wrapper {
+  margin-bottom: 10px;
+}
+
+.staticon {
+  font-size: 36px;
+  color: #ffffff;
+}
+
+.stats-info {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  margin-bottom: 5px;
+}
+
+.statstitle {
+  color: var(--mantine-color-white);
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-left: 10px;
+}
+
+.statscount {
+  color: var(--mantine-color-white);
+  font-size: 2rem;
+  line-height: 1;
+  font-weight: 700;
+  font-family: Greycliff CF, var(--mantine-font-family);
+}
+
+.statsdescription {
+  color: var(--mantine-color-blue-0);
+  font-size: 1rem;
+  margin-top: 5px;
+}
+
+.stat {
+  flex: 1;
+}
+
+/* StatsGroup.css */
+
+.icon-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+.staticon {
+  font-size: 36px; /* Adjust size as needed */
+  color: #ffffff; /* Adjust color as needed */
+}
+
+/* Add other styles as per your requirement */
+@media (max-width: 1200px) {
+  .root {
+    margin-top: 100px;
+    margin-right: 3%;
+    margin-left: 3%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .root {
+    margin-top: 100px;
+    margin-right: 3%;
+    margin-left: 3%;
+    padding: 15px;
+  }
+}
+
+@media (max-width: 992px) {
+  .root {
+    margin-top: 100px;
+    margin-right: 2%;
+    margin-left: 2%;
+    padding: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .root {
+    margin-top: 100px;
+    margin-right: 1%;
+    margin-left: 1%;
+    padding: 5px;
+  }
+
+  .statstitle {
+    font-size: 1.2rem;
+  }
+
+  .statscount {
+    font-size: 2rem;
+    margin-bottom: 5px;
+  }
+
+  .statsdescription {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 767px) {
+  .root {
+    margin-top: 100px;
+    padding: 3px;
+  }
+
+  .statstitle {
+    font-size: 0.8rem;
+  }
+
+  .statscount {
+    font-size: 1.2rem;
+    margin-bottom: 3px;
+  }
+
+  .statsdescription {
+    font-size: 0.6rem;
+  }
+}
+
+@media (min-width: 414px) and (max-height: 896px) {
+  .icon-wrapper {
+    margin-top: 10px;
+  }
+
+  .root {
+    margin-top: 100px;
+    padding: 3px;
+  }
+
+  .statstitle {
+    font-size: 0.7rem;
+  }
+
+  .statscount {
+    font-size: 1.2rem;
+    margin-bottom: 3px;
+  }
+
+  .statsdescription {
+    font-size: 0.5rem;
+  }
+}
+@media (min-width: 375px) and (max-height: 844px) {
+  .icon-wrapper {
+    margin-top: 10px;
+  }
+
+  .root {
+    margin-top: 100px;
+    padding: 3px;
+  }
+
+  .statstitle {
+    font-size: 0.7rem;
+  }
+
+  .statscount {
+    font-size: 1.2rem;
+    margin-bottom: 3px;
+  }
+
+  .statsdescription {
+    font-size: 0.5rem;
+  }
+}
+
+@media (max-width: 280px) {
+  .icon-wrapper {
+    margin-top: 10px;
+  }
+
+  .statstitle {
+    font-size: 0.5rem;
+  }
+
+  .statscount {
+    font-size: 1rem;
+    margin-bottom: 3px;
+  }
+
+  .statsdescription {
+    font-size: 0.4rem;
+  }
+}

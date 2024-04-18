@@ -1,0 +1,250 @@
+.cloud-card {
+  margin-left: 14%;
+  width: 300px;
+  height: 200px;
+  background-color: #aecdee;
+  padding: 20px;
+  border-radius: 8px;
+  transition: all 0.3s;
+  border: 3px solid #aecdee;
+  box-shadow: 0 0 10px #aecdee;
+  color: #000000; /* Set font color to black */
+}
+
+.cloud {
+  margin-left: 25%;
+  width: 150px;
+  height: 70px;
+  background: #eceff1;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 70px;
+  color: #000000; /* Set font color to black */
+}
+
+/* Remaining CSS remains unchanged */
+
+.cloud::after,
+.cloud::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  background: inherit;
+  border-radius: inherit;
+}
+
+.cloud::before {
+  width: 70px;
+  height: 70px;
+  top: -20px;
+  left: 60px;
+}
+
+.cloud {
+  animation: float 1.8s infinite alternate;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(15px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.shadow {
+  width: 150px;
+  height: 24px;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-top: 100px;
+  border-radius: 50%;
+  filter: blur(7px);
+  animation: sha 1.8s infinite alternate;
+}
+
+@keyframes sha {
+  0% {
+    transform: scale(1, 1);
+  }
+
+  100% {
+    transform: scale(0.85, 0.85);
+  }
+}
+
+/*------------------------Contanct.jsx------------------------*/
+.contact-us-container {
+  background: linear-gradient(to right, #e9f5fa, #daf0fa);
+  color: #ffffff; /* Set text color to white or any other contrasting color */
+  padding: 10px; /* Adjust padding as needed */
+  text-align: center;
+}
+
+.contact-us-image {
+  border-radius: 10px;
+  width: 500px; /* Set the desired width */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.p-cu {
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  margin-top: 20%;
+  text-align: center;
+  font-size: 5em;
+}
+
+.contact-col {
+  border: 2px solid #2374b3;
+  padding: 15px;
+}
+
+.h1-cc {
+  font-size: 2vw; /* Responsive font size based on viewport width */
+  margin-top: 2vw; /* Responsive margin based on viewport width */
+  color: black; /* Set font color to black */
+}
+
+.p-email {
+  font-size: 1vw; /* Responsive font size based on viewport width */
+  text-indent: -5vw; /* Responsive text indent based on viewport width */
+  margin-top: 1vw; /* Responsive margin based on viewport width */
+  color: black; /* Set font color to black */
+}
+
+@media screen and (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .h1-cc {
+    font-size: 6vw; /* Adjust font size for smaller screens */
+    margin-top: 4vw; /* Adjust margin for smaller screens */
+  }
+
+  .p-email {
+    font-size: 3vw; /* Adjust font size for smaller screens */
+    text-indent: 8vw; /* Adjust text indent for smaller screens */
+    margin-top: 4vw; /* Adjust margin for smaller screens */
+  }
+}
+
+/* Add more media queries as needed for other screen sizes */
+
+.h2-cc {
+  font-size: 32px;
+  color: rgb(0, 0, 0);
+  text-align: justify;
+  margin-left: 1%;
+}
+
+.h3-cc {
+  font-size: 54px;
+  color: rgb(0, 0, 0);
+  margin-left: 1%;
+}
+
+.ul-branch-location {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  margin: 0 10px;
+  text-align: justify; /* Justify the text within the li elements */
+}
+
+.custom-li-color {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+}
+
+.custom-li {
+  font-size: 1.5vw; /* Adjust font size relative to viewport width */
+  margin-right: 2vw; /* Adjust margin relative to viewport width */
+  margin-bottom: 2vh; /* Adjust margin relative to viewport height */
+}
+
+@media (max-width: 768px) {
+  .custom-li {
+    font-size: 4vw; /* Adjust font size for smaller screens */
+    margin-right: 2vw; /* Adjust margin for smaller screens */
+    margin-bottom: 3vh; /* Adjust margin for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .custom-li {
+    font-size: 5vw; /* Further adjust font size for even smaller screens */
+    margin-right: 2vw; /* Further adjust margin for even smaller screens */
+    margin-bottom: 4vh; /* Further adjust margin for even smaller screens */
+  }
+}
+
+.direction-button {
+  font-size: 20px;
+  position: relative;
+}
+
+.direction-button::after {
+  content: "\2197"; /* Unicode character for upper-right arrow */
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-left: 4px; /* Adjust as needed */
+  transition: transform 0.3s ease; /* Add transition for smooth effect */
+}
+
+.direction-button:hover::after {
+  transform: scale(3.3); /* Scale up the arrow on hover */
+}
+
+.custom-li-color:hover {
+  color: #0066cc; /* Set your desired hover text color */
+}
+
+.contact-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  text-align: left;
+}
+
+.sms-container {
+  text-align: left;
+}
+
+.contact-h1 {
+  margin-top: 15px;
+  font-size: 3rem; /* Adjust the font size as needed */
+}
+
+.resume-btn {
+  margin-top: -2%;
+}
+
+.inquiry-select {
+  margin-bottom: 3%;
+  margin-left: 2%;
+  width: 50%;
+  margin-left: 10px;
+}
+
+.job-inquiry-select {
+  margin-bottom: 20px;
+  width: 70%;
+}
+
+.job-inquiry-show-hide {
+  margin-top: -7%;
+}
+
+.job-description {
+  margin-bottom: 5px;
+}
+
+.job-description-container {
+  margin-top: -2%;
+  margin-bottom: 3%;
+  border: 2px solid #ccc; /* Add border with desired color */
+  border-radius: 10px; /* Add border radius for rounded corners */
+  padding: 10px; /* Add padding to create space between the content and the border */
+  background-color: #e7f3fa;
+  width: 95%;
+}
