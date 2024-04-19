@@ -17,12 +17,5 @@
         }
       ]
     }
-  ],
-  "rewrites": [
-    {
-      "source": "/api/(.*)",
-      "destination": "test1-seven-mauve.vercel.app/api/:path*",
-      "statusCode": 301
-    }
   ]
 }
