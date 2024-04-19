@@ -21,7 +21,7 @@
   "rewrites": [
     {
       "source": "/api/(.*)",
-      "destination": "https://josephrep-jvhms.vercel.app/api/:path*",
+      "destination": "test1-seven-mauve.vercel.app/api/:path*",
       "statusCode": 301
     }
   ]
